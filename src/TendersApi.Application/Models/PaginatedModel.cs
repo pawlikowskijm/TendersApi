@@ -1,6 +1,6 @@
 ﻿namespace TendersApi.Application.Models;
 
-public sealed class PaginatedModel<T>
+public record PaginatedModel<T>
 {
     public int Page { get; }
     public int TotalPages { get; }

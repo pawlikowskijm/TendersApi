@@ -38,7 +38,7 @@ This project is a RESTful API template that integrates with the [Tenders Guru AP
 
 ## 🔧 Configuration
 
-The application uses two primary configuration sections from `appsettings.json`:
+The application uses two primary configuration sections from `appsettings.{environment}.json`:
 
 ### `TendersGuruApiOptions`
 
