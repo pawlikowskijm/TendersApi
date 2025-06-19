@@ -1,0 +1,21 @@
+@TendersApi_HostAddress = http://localhost:32775
+
+GET {{TendersApi_HostAddress}}/tenders
+Accept: application/json
+
+###
+
+GET {{TendersApi_HostAddress}}/tenders?tenderId=579782
+Accept: application/json
+
+###
+
+GET {{TendersApi_HostAddress}}/tenders?supplierId=15097
+Accept: application/json
+
+###
+
+GET {{TendersApi_HostAddress}}/tenders?minAmountInEur=10000&maxAmountInEur=50000&minDate=2021-01-01&maxDate=2022-01-01&page=1&sort=amountineur+desc
+Accept: application/json
+
+###

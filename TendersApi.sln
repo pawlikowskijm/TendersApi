@@ -1,9 +1,30 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.14.36212.18 d17.14
+VisualStudioVersion = 17.14.36212.18
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TendersApi", "TendersApi\TendersApi.csproj", "{09AEEFAA-831A-4440-B2AE-20D5175F99A3}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TendersApi.WebApi", "src\TendersApi.WebApi\TendersApi.WebApi.csproj", "{09AEEFAA-831A-4440-B2AE-20D5175F99A3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TendersApi.Infrastructure", "src\TendersApi.Infrastructure\TendersApi.Infrastructure.csproj", "{F8A4AA33-6E0C-4648-BD8D-A72960C04682}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TendersApi.Application", "src\TendersApi.Application\TendersApi.Application.csproj", "{EB713CE7-7885-4EAC-BB00-5FA2DDF55E08}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution files", "Solution files", "{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}"
+	ProjectSection(SolutionItems) = preProject
+		Directory.Packages.props = Directory.Packages.props
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{D77B0CD7-676F-4531-BB35-D3D29CDFC76B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{62CF7CF2-AB33-463C-8038-D5843CF27B28}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "UnitTests", "UnitTests", "{87F864FC-E36F-4AEA-AA7E-E8166762BF00}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TendersApi.Application.UnitTests", "tests\TendersApi.Application.UnitTests\TendersApi.Application.UnitTests.csproj", "{E395B943-199D-47E3-AD6F-AF4A98ECBCD6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TendersApi.Infrastructure.UnitTests", "tests\TendersApi.Infrastructure.UnitTests\TendersApi.Infrastructure.UnitTests.csproj", "{24B2173B-3BC3-4E5E-BB4F-686E266ABB78}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TendersApi.WebApi.UnitTests", "tests\TendersApi.WebApi.UnitTests\TendersApi.WebApi.UnitTests.csproj", "{6B61C312-16B1-49BC-995F-A7C4F31A90C4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,9 +36,38 @@ Global
 		{09AEEFAA-831A-4440-B2AE-20D5175F99A3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{09AEEFAA-831A-4440-B2AE-20D5175F99A3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{09AEEFAA-831A-4440-B2AE-20D5175F99A3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F8A4AA33-6E0C-4648-BD8D-A72960C04682}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F8A4AA33-6E0C-4648-BD8D-A72960C04682}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F8A4AA33-6E0C-4648-BD8D-A72960C04682}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F8A4AA33-6E0C-4648-BD8D-A72960C04682}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EB713CE7-7885-4EAC-BB00-5FA2DDF55E08}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EB713CE7-7885-4EAC-BB00-5FA2DDF55E08}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EB713CE7-7885-4EAC-BB00-5FA2DDF55E08}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EB713CE7-7885-4EAC-BB00-5FA2DDF55E08}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E395B943-199D-47E3-AD6F-AF4A98ECBCD6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E395B943-199D-47E3-AD6F-AF4A98ECBCD6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E395B943-199D-47E3-AD6F-AF4A98ECBCD6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E395B943-199D-47E3-AD6F-AF4A98ECBCD6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{24B2173B-3BC3-4E5E-BB4F-686E266ABB78}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{24B2173B-3BC3-4E5E-BB4F-686E266ABB78}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{24B2173B-3BC3-4E5E-BB4F-686E266ABB78}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{24B2173B-3BC3-4E5E-BB4F-686E266ABB78}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6B61C312-16B1-49BC-995F-A7C4F31A90C4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6B61C312-16B1-49BC-995F-A7C4F31A90C4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6B61C312-16B1-49BC-995F-A7C4F31A90C4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6B61C312-16B1-49BC-995F-A7C4F31A90C4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{09AEEFAA-831A-4440-B2AE-20D5175F99A3} = {D77B0CD7-676F-4531-BB35-D3D29CDFC76B}
+		{F8A4AA33-6E0C-4648-BD8D-A72960C04682} = {D77B0CD7-676F-4531-BB35-D3D29CDFC76B}
+		{EB713CE7-7885-4EAC-BB00-5FA2DDF55E08} = {D77B0CD7-676F-4531-BB35-D3D29CDFC76B}
+		{87F864FC-E36F-4AEA-AA7E-E8166762BF00} = {62CF7CF2-AB33-463C-8038-D5843CF27B28}
+		{E395B943-199D-47E3-AD6F-AF4A98ECBCD6} = {87F864FC-E36F-4AEA-AA7E-E8166762BF00}
+		{24B2173B-3BC3-4E5E-BB4F-686E266ABB78} = {87F864FC-E36F-4AEA-AA7E-E8166762BF00}
+		{6B61C312-16B1-49BC-995F-A7C4F31A90C4} = {87F864FC-E36F-4AEA-AA7E-E8166762BF00}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {478E415D-A9FA-47C1-BEB1-486429C76F83}
