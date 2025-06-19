@@ -112,6 +112,8 @@ TendersApi/
 
 Retrieves a list of public tenders from the local cache. This endpoint supports filtering, sorting, and pagination.
 
+⚠️ **Note:** You have to know, that correct usage of this endpoint requires some warmup from fresh started API (max. 5 minutes) — it has to fetch data from source API which is not available at start of API service.
+
 ---
 
 ## 🔄 Request
@@ -119,8 +121,6 @@ Retrieves a list of public tenders from the local cache. This endpoint supports 
 ```http
 GET /tenders
 ```
-
-⚠️ **Note:** You have to know, that correct usage of this endpoint requires some warmup from fresh started API (max. 5 minutes) — it has to fetch data from source API which is not available at start of API service.
 
 ### ✅ Query Parameters
 
