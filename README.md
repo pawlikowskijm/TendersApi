@@ -10,7 +10,7 @@ This project is a RESTful API template that integrates with the [Tenders Guru AP
 
 ### Prerequisites
 
-- [.NET 8 SDK](https://dotnet.microsoft.com/en-us/download/dotnet/8.0)
+- [.NET 9 SDK](https://dotnet.microsoft.com/en-us/download/dotnet/9.0)
 - [Docker Desktop](https://www.docker.com/products/docker-desktop) (optional for containerized deployment)
 - Visual Studio 2022+ or any modern IDE
 
